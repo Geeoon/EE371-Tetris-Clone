@@ -1,0 +1,58 @@
+module clear_row_tb();
+    logic clk, fail_or_full, full, Start, Reset;
+    
+    logic [4:0] row;
+    logic Ready, clearrow, noclear, Done;
+    
+    logic [2:0] read_id, write_id;
+    logic [4:0] read_x, read_y, write_x, write_y;
+    logic wren, start_check;
+    
+    clear_row dut(.*);
+    
+    //create simulated clock
+    initial begin
+        clk <= 0;
+        forever #(20/2) clk <= ~clk; //20 was T
+    end // clock initial
+    
+    initial begin
+        Reset = 1;
+        fail_or_full = 0;
+        full = 0;
+        Start = 0;
+        read_id = 0;
+        
+        @(posedge clk);
+        
+        Reset = 0;
+        repeat(3) @(posedge clk);
+        Start = 1;
+        @(posedge clk);
+        
+        Reset = 1;
+        fail_or_full = 1;
+        full = 0;
+        Start = 0;
+        @(posedge clk);
+        Reset = 0;
+        @(posedge clk);
+        Start = 1;
+        repeat(3) @(posedge clk);
+        @(posedge noclear);
+        @(posedge clk);
+
+        Reset = 1;
+        fail_or_full = 1;
+        full = 1;
+        Start = 0;
+        @(posedge clk);
+        Reset = 0;
+        @(posedge clk);
+        Start = 1;
+        repeat(25) @(posedge clk);
+        @(posedge Done);
+        @(posedge clk);
+        $stop;
+    end
+endmodule

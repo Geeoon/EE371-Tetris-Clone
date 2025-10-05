@@ -1,0 +1,3 @@
+module board_ctrl();
+
+endmodule  // board_ctrl

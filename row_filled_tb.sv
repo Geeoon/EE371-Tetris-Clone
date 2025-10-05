@@ -1,0 +1,40 @@
+module row_filled_tb();
+	logic clk, Start, Reset, Ready, fail, full, x_present;
+	logic [4:0] y, x;
+	
+	row_filled dut(.*);
+	
+	//create simulated clock
+		initial begin
+			clk <= 0;
+			forever #(20/2) clk <= ~clk; //20 was T
+		end // clock initial
+		
+		//test input define
+	initial begin
+		Reset = 1;
+		y = 9;
+		Start = 0;
+		x_present = 0;
+		@(posedge clk);
+		
+		// full
+		x_present = 1;
+		Reset = 0;
+		@(posedge clk);
+		Start = 1;
+		@(posedge clk);
+		@(posedge full);
+		@(posedge clk);
+		
+		Reset = 1;
+		x_present = 1;
+		@(posedge clk);
+		Reset = 0;
+		repeat(3) @(posedge clk);
+		x_present = 0;
+		@(posedge full or posedge fail);
+		@(posedge clk);
+		$stop;
+	end
+endmodule

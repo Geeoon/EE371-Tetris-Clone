@@ -1,0 +1,17 @@
+module clear_row_data(init_regs, clk, incr_row, row, final_row);
+	input logic init_regs, clk, incr_row;
+	
+	output logic [5:0] row;
+	output logic final_row;
+	
+	always_ff @(posedge clk) begin
+			if(init_regs) begin
+				row <= 0;
+			end
+			if (incr_row) begin
+				row <= row + 6'b1;
+			end
+		end //always_ff
+		
+		assign final_row = (row == 20);
+endmodule

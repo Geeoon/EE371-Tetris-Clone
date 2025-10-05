@@ -1,0 +1,3 @@
+module color_24_6_encoder();
+
+endmodule  // color_24_6_encoder

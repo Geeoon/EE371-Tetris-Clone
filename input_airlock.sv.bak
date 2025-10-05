@@ -1,0 +1,6 @@
+/**
+ * @brief ensures that a button press is only HIGH for one clock cycle and prevents metastability
+ */
+module input_airlock();
+
+endmodule  // input_airlock

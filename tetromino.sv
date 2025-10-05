@@ -1,0 +1,30 @@
+module tetromino(clk, shift_left, shift_right, Start, Reset,
+					placed, ground, pos_x, pos_y, Ready);
+	input logic shift_left, shift_right, clk;
+	input logic Start, Reset, ground;
+	output logic [4:0] pos_x, pos_y;
+	output logic placed, Ready;
+	
+	logic initialize, incr_pos_y, incr_count, reset_count, pos_y_eQ_ground, count_eQ_max;
+	
+	tetromino_data datapath(.clk, .initialize, .incr_pos_y, .incr_count, .shift_left,
+								.pos_x, .pos_y, .shift_right, .reset_count, .ground, .pos_y_eQ_ground, .count_eQ_max);
+	tetromino_ctr controlpath(.Start, .clk, .Reset, .pos_y_eQ_ground, .count_eQ_max,
+							.placed, .incr_pos_y, .incr_count, .initialize, .reset_count, .Ready);
+endmodule
+
+module tetromino_tb();
+    // inputs
+    logic clk, shift_left, shift_right, Start, Reset, ground;
+    
+    // outputs
+    logic [4:0] pos_x, pos_y;
+    logic placed, Ready;
+    
+    tetromino dut (.*);
+    
+    initial begin
+    
+    
+    end  // initial
+endmodule  // tetromino_tb

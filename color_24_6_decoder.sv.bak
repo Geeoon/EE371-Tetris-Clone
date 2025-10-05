@@ -1,0 +1,15 @@
+module color_24_6_decoder(in_color, out_color);
+    input logic [23:0] in_color;
+    output logic [5:0] out_color;
+    
+    logic [7:0] r_channel_in, g_channel_in, b_channel_in;
+    logic [1:0] r_channel_out, g_channel_out, b_channel_out;
+    
+    assign r_channel_in = in_color[23:16];
+    assign g_channel_in = in_color[15:8];
+    assign b_channel_in = in_color[7:0];
+    
+    assign out_color[5:4] = r_channel_in[7:6];
+    assign out_color[3:2] = g_channel_in[7:6];
+    assign out_color[1:0] = b_channel_in[7:6];
+endmodule  // color_24_6_decoder

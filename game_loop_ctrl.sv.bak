@@ -1,0 +1,23 @@
+module game_loop_ctrl(clk,
+                      reset,
+                      placed,
+                      tetromino_ready,
+                      place_or_no_place,
+                      shift_controller_done,
+                      tetromino_drawer_done,
+                      board_drawer_done,
+                      clear_rows_done,
+                      tetromino_eraser_done,
+                      );
+    input logic clk,
+                reset,
+                placed,
+                tetromino_ready,
+                place_or_no_place,
+                shift_controller_done,
+                tetromino_drawer_done,
+                board_drawer_done,
+                clear_rows_done,
+                tetromino_eraser_done,
+                      
+endmodule  // game_loop_ctrl

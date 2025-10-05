@@ -1,0 +1,104 @@
+
+State Machine - |DE1_SoC|game_loop:game|game_loop_ctrl:controller|ps
+Name ps~4 ps~3 ps~2 
+ps.s_init 0 0 0 
+ps.s_tetromino 0 0 1 
+ps.s_collision 0 1 0 
+ps.s_shift_controller 0 1 1 
+ps.s_draw_tetromino 1 0 0 
+ps.s_draw_board 1 0 1 
+ps.s_clear_rows 1 1 0 
+ps.s_eraser 1 1 1 
+
+State Machine - |DE1_SoC|game_loop:game|tetromino_eraser:tetromino_eraser_module|tetromino_drawer_ctrl:controller|ps
+Name ps~3 ps~2 
+ps.s_idle 0 0 
+ps.s_loop 0 1 
+ps.s_write 1 0 
+ps.s_done 1 1 
+
+State Machine - |DE1_SoC|game_loop:game|clear_rows:clear_rows_module|clear_row:row_clearer|clear_row_ctr:controlpath|ps
+Name ps~4 ps~3 ps~2 
+ps.S_idle 0 0 0 
+ps.S_wait 0 0 1 
+ps.S_check 0 1 0 
+ps.S_noclear 0 1 1 
+ps.S_shift_wait 1 0 0 
+ps.S_done 1 0 1 
+
+State Machine - |DE1_SoC|game_loop:game|clear_rows:clear_rows_module|clear_row:row_clearer|shift_down:shift|shift_down_ctrl:controller|ps
+Name ps~4 ps~3 ps~2 
+ps.s_idle 0 0 0 
+ps.s_read 0 0 1 
+ps.s_load 0 1 0 
+ps.s_wait1 0 1 1 
+ps.s_write 1 0 0 
+ps.s_wait2 1 0 1 
+ps.s_done 1 1 0 
+
+State Machine - |DE1_SoC|game_loop:game|clear_rows:clear_rows_module|row_filled:row_checker|row_filled_ctr:controlpath|ps
+Name ps~3 ps~2 
+ps.S_idle 0 0 
+ps.S_check 0 1 
+ps.S_fail 1 0 
+ps.S_full 1 1 
+
+State Machine - |DE1_SoC|game_loop:game|board_drawer_system:board_drawer_system_module|block_drawer:block_drawing_module|block_drawer_ctrl:controller|ps
+Name ps~5 ps~4 ps~3 ps~2 
+ps.s_idle 0 0 0 0 
+ps.s_top 0 0 0 1 
+ps.s_bottom 0 0 1 0 
+ps.s_left 0 0 1 1 
+ps.s_right 0 1 0 0 
+ps.s_main 0 1 0 1 
+ps.s_done 0 1 1 0 
+ps.s_grid_t 0 1 1 1 
+ps.s_grid_b 1 0 0 0 
+ps.s_grid_l 1 0 0 1 
+ps.s_grid_r 1 0 1 0 
+ps.s_grid_main 1 0 1 1 
+
+State Machine - |DE1_SoC|game_loop:game|board_drawer_system:board_drawer_system_module|board_drawer:board_drawing_module|board_drawer_ctrl:controller|ps
+Name ps~4 ps~3 ps~2 
+ps.s_load 0 0 0 
+ps.s_loop 0 0 1 
+ps.s_draw 0 1 0 
+ps.s_wait 0 1 1 
+ps.s_done 1 0 0 
+
+State Machine - |DE1_SoC|game_loop:game|tetromino_drawer:tetromino_drawer_module|tetromino_drawer_ctrl:controller|ps
+Name ps~3 ps~2 
+ps.s_idle 0 0 
+ps.s_loop 0 1 
+ps.s_write 1 0 
+ps.s_done 1 1 
+
+State Machine - |DE1_SoC|game_loop:game|shift_controller:shift_controller_module|shift_controller_ctrl:controller|ps
+Name ps~4 ps~3 ps~2 
+ps.s_idle 0 0 0 
+ps.s_wait_l 0 0 1 
+ps.s_check_l 0 1 0 
+ps.s_wait_r 0 1 1 
+ps.s_check_r 1 0 0 
+ps.s_done 1 0 1 
+
+State Machine - |DE1_SoC|game_loop:game|collision:collision_module|collision_ctr:controlpath|ps
+Name ps~4 ps~3 ps~2 
+ps.S_idle 0 0 0 
+ps.S_wait 0 0 1 
+ps.S_check 0 1 0 
+ps.S_place 0 1 1 
+ps.S_noplace 1 0 0 
+
+State Machine - |DE1_SoC|game_loop:game|tetromino:game_piece|tetromino_ctr:controlpath|ps
+Name ps~3 ps~2 
+ps.S_idle 0 0 
+ps.S_fall 0 1 
+ps.S_done 1 0 
+
+State Machine - |DE1_SoC|game_loop:game|board:bd|board_ctrl:controlpath|ps
+Name ps~3 ps~2 
+ps.s_idle 0 0 
+ps.s_load 0 1 
+ps.s_write 1 0 
+ps.s_wait 1 1 

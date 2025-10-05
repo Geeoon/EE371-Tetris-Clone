@@ -1,0 +1,23 @@
+module collision_data(x, y, clk, init_regs, incr_x, id, in_id, y_eQ_zero,
+							in_id_eQ_zero, pos_x_eQ_limit, pos_y, pos_x, limit);
+	input logic [4:0] y, x; //pos
+	input logic clk, init_regs, incr_x;
+	input logic [2:0] id, in_id;
+	
+	output logic y_eQ_zero, in_id_eQ_zero, pos_x_eQ_limit;
+	output logic [4:0] pos_y, pos_x, limit;
+	
+	always_ff @(posedge clk) begin
+		if(init_regs) begin
+			pos_y <= y - 5'b1;
+			pos_x <= x;
+			limit <= id +x - 5'b1;
+		end else if (incr_x) begin
+			pos_x <= pos_x + 5'b1;
+		end
+	end //always_ff
+	
+	assign y_eQ_zero = (y == 0);
+	assign in_id_eQ_zero = (in_id == 0);
+	assign pos_x_eQ_limit = (pos_x == limit);
+endmodule

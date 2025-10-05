@@ -1,0 +1,3 @@
+module #(parameter range) rng (.clk, .reset, .next, .out);
+
+endmodule  // rng

@@ -1,0 +1,4 @@
+module board(clk, );
+    input logic clk;
+
+endmodule  // board

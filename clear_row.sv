@@ -1,0 +1,45 @@
+module clear_row(clk, read_id, fail_or_full, full, Start, Reset, row,
+                        Ready, clearrow, noclear, read_x, read_y, write_x, write_y, write_id, wren, start_check, Done);
+    input logic clk, fail_or_full, full, Start, Reset;
+    // watch for fail or full race condition
+    input logic [2:0] read_id;
+    output logic [4:0] read_x, read_y, write_x, write_y;
+    output logic [2:0] write_id;
+    output logic wren;
+    
+    output logic [4:0] row;
+    output logic Ready, clearrow, noclear, start_check, Done;
+    
+    logic incr_row, init_regs, final_row, shift_done;
+    
+    
+    shift_down shift(.clk,
+                     .reset(clearrow),
+                     .start(Start),
+                     .y(row),
+                     .read_id,
+                     .read_x,
+                     .read_y,
+                     .write_x,
+                     .write_y,
+                     .write_id,
+                     .wren,
+                     .done(shift_done));
+                          
+    clear_row_data datapath(.init_regs, .clk, .incr_row,
+                            .row, .final_row);
+    clear_row_ctr controlpath(.Start,
+                              .Reset,
+                              .clk,
+                              .shift_done,
+                              .fail_or_full,
+                              .full,
+                              .Ready,
+                              .init_regs,
+                              .clearrow,
+                              .noclear,
+                              .incr_row,
+                              .final_row,
+                              .start_check,
+                              .Done);
+endmodule

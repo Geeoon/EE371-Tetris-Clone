@@ -1,0 +1,7 @@
+module board_drawer(clk, reset, ready, done, x, y, draw);
+    input logic clk, reset, ready, done;
+    output logic draw
+    output logic [4:0] x, y;
+    
+    
+endmodule;  // board_drawer

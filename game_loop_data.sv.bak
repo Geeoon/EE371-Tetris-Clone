@@ -1,0 +1,3 @@
+module game_loop_data(clk, );
+
+endmodule  // game_loop_data

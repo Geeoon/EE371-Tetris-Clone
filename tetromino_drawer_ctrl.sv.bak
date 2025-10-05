@@ -1,0 +1,4 @@
+module tetromino_drawer_ctrl(clk, reset, start, x_eq_posxpwidth, y_eq_posypwidth, load_regs, incr_x, incr_y);
+    input logic clk, reset, start, x_eq_posxpwidth, y_eq_posypwidth;
+    output logic load_regs, incr_x, incr_y;
+endmodule  // tetromino_drawer_ctrl

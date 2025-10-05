@@ -1,0 +1,13 @@
+module row_filled (clk, Start, Reset, y, x_present, x, Ready, fail, full);
+    input logic Start, Reset, clk, x_present;
+    input logic [4:0] y;
+    
+    output logic Ready, fail, full;
+    output logic [4:0] x;
+    
+    logic x_end, initialize, incr_x;
+    
+    row_filled_data datapath(.x, .y, .initialize, .clk, .incr_x, .x_end);
+    row_filled_ctr controlpath(.Start, .Reset, .clk, .x_end, .x_present,
+                               .Ready, .initialize, .incr_x, .fail, .full);
+endmodule 

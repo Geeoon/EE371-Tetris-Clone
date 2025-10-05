@@ -1,0 +1,835 @@
+# Reading C:/intelFPGA/17.0/modelsim_ase/tcl/vsim/pref.tcl
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 06:59:59 on Jun 11,2025
+# vlog -reportprogress 300 ./DE1_SoC.sv ./block_drawer.sv ./block_drawer_ctrl.sv ./block_drawer_data.sv ./board.sv ./board_ctrl.sv ./board_data.sv ./board_drawer.sv ./board_drawer_ctrl.sv ./board_drawer_data.sv ./board_drawer_system.sv ./clear_row.sv ./clear_row_ctr.sv ./clear_row_data.sv ./clear_row_tb.sv ./clear_rows.sv ./collision.sv ./collision_ctr.sv ./collision_data.sv ./collision_tb.sv ./color_24_6_decoder.sv ./color_24_6_encoder.sv ./game_check.sv ./game_check_ctrl.sv ./game_check_data.sv ./game_loop.sv ./game_loop_ctrl.sv ./game_loop_data.sv ./input_airlock.sv ./rng.sv ./row_filled.sv ./row_filled_ctr.sv ./row_filled_data.sv ./row_filled_tb.sv ./screen_state.sv ./shift_controller.sv ./shift_controller_ctrl.sv ./shift_controller_data.sv ./shift_down.sv ./shift_down_ctrl.sv ./shift_down_data.sv ./tetromino.sv ./tetromino_ctr.sv ./tetromino_data.sv ./tetromino_drawer.sv ./tetromino_drawer_ctrl.sv ./tetromino_drawer_data.sv ./tetromino_eraser.sv ./video_driver.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module block_drawer
+# -- Compiling module block_drawer_tb
+# -- Compiling module block_drawer_ctrl
+# -- Compiling module block_drawer_data
+# -- Compiling module board
+# -- Compiling module board_tb
+# -- Compiling module board_ctrl
+# -- Compiling module board_data
+# -- Compiling module board_drawer
+# -- Compiling module board_drawer_tb
+# -- Compiling module board_drawer_ctrl
+# -- Compiling module board_drawer_data
+# -- Compiling module board_drawer_system
+# -- Compiling module board_drawer_system_tb
+# -- Compiling module clear_row
+# -- Compiling module clear_row_ctr
+# -- Compiling module clear_row_data
+# -- Compiling module clear_row_tb
+# -- Compiling module clear_rows
+# -- Compiling module clear_rows_tb
+# -- Compiling module collision
+# -- Compiling module collision_ctr
+# -- Compiling module collision_data
+# -- Compiling module collision_tb
+# -- Compiling module color_24_6_decoder
+# -- Compiling module color_24_6_encoder
+# -- Compiling module game_check
+# -- Compiling module game_check_ctrl
+# -- Compiling module game_check_data
+# -- Compiling module game_loop
+# -- Compiling module game_loop_tb
+# -- Compiling module game_loop_ctrl
+# -- Compiling module game_loop_data
+# -- Compiling module input_airlock
+# -- Compiling module input_airlock_tb
+# -- Compiling module rng
+# -- Compiling module rng_tb
+# -- Compiling module row_filled
+# -- Compiling module row_filled_ctr
+# -- Compiling module row_filled_data
+# -- Compiling module row_filled_tb
+# -- Compiling module screen_state
+# -- Compiling module screen_state_tb
+# -- Compiling module shift_controller
+# -- Compiling module shift_controller_tb
+# -- Compiling module shift_controller_ctrl
+# -- Compiling module shift_controller_data
+# -- Compiling module shift_down
+# -- Compiling module shift_down_tb
+# -- Compiling module shift_down_ctrl
+# -- Compiling module shift_down_data
+# -- Compiling module tetromino
+# -- Compiling module tetromino_tb
+# -- Compiling module tetromino_ctr
+# -- Compiling module tetromino_data
+# -- Compiling module tetromino_drawer
+# -- Compiling module tetromino_drawer_tb
+# -- Compiling module tetromino_drawer_ctrl
+# -- Compiling module tetromino_drawer_data
+# -- Compiling module tetromino_eraser
+# -- Compiling module tetromino_eraser_tb
+# -- Compiling module video_driver
+# 
+# Top level modules:
+# 	DE1_SoC
+# 	block_drawer_tb
+# 	board_tb
+# 	board_drawer_tb
+# 	board_drawer_system_tb
+# 	clear_row_tb
+# 	clear_rows_tb
+# 	collision_tb
+# 	game_loop_tb
+# 	input_airlock_tb
+# 	rng_tb
+# 	row_filled_tb
+# 	screen_state_tb
+# 	shift_controller_tb
+# 	shift_down_tb
+# 	tetromino_tb
+# 	tetromino_drawer_tb
+# 	tetromino_eraser_tb
+# End time: 07:00:01 on Jun 11,2025, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:00:01 on Jun 11,2025
+# vlog -reportprogress 300 ./CLOCK25_PLL.v ./altera_up_avalon_video_vga_timing.v ./board_2PRAM.v ./screen_state_2PRAM.v 
+# -- Compiling module CLOCK25_PLL
+# -- Compiling module altera_up_avalon_video_vga_timing
+# -- Compiling module board_2PRAM
+# -- Compiling module screen_state_2PRAM
+# 
+# Top level modules:
+# 	CLOCK25_PLL
+# 	altera_up_avalon_video_vga_timing
+# 	board_2PRAM
+# 	screen_state_2PRAM
+# End time: 07:00:01 on Jun 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work board_drawer_tb -Lf altera_mf_ver 
+# Start time: 07:00:03 on Jun 11,2025
+# Loading sv_std.std
+# Loading work.board_drawer_tb
+# Loading work.board_drawer
+# Loading work.board_drawer_ctrl
+# Loading work.board_drawer_data
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: geeoon  Hostname: EE-361PC08  ProcessID: 25772
+#           Attempting to use alternate WLF file "./wlftz9wr2g".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftz9wr2g
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./board_drawer.sv(57)
+#    Time: 241950 ps  Iteration: 3  Instance: /board_drawer_tb
+# Break in Module board_drawer_tb at ./board_drawer.sv line 57
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:10:13 on Jun 11,2025
+# vlog -reportprogress 300 ./DE1_SoC.sv ./block_drawer.sv ./block_drawer_ctrl.sv ./block_drawer_data.sv ./board.sv ./board_ctrl.sv ./board_data.sv ./board_drawer.sv ./board_drawer_ctrl.sv ./board_drawer_data.sv ./board_drawer_system.sv ./clear_row.sv ./clear_row_ctr.sv ./clear_row_data.sv ./clear_row_tb.sv ./clear_rows.sv ./collision.sv ./collision_ctr.sv ./collision_data.sv ./collision_tb.sv ./color_24_6_decoder.sv ./color_24_6_encoder.sv ./game_check.sv ./game_check_ctrl.sv ./game_check_data.sv ./game_loop.sv ./game_loop_ctrl.sv ./game_loop_data.sv ./input_airlock.sv ./rng.sv ./row_filled.sv ./row_filled_ctr.sv ./row_filled_data.sv ./row_filled_tb.sv ./screen_state.sv ./shift_controller.sv ./shift_controller_ctrl.sv ./shift_controller_data.sv ./shift_down.sv ./shift_down_ctrl.sv ./shift_down_data.sv ./tetromino.sv ./tetromino_ctr.sv ./tetromino_data.sv ./tetromino_drawer.sv ./tetromino_drawer_ctrl.sv ./tetromino_drawer_data.sv ./tetromino_eraser.sv ./video_driver.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module block_drawer
+# -- Compiling module block_drawer_tb
+# -- Compiling module block_drawer_ctrl
+# -- Compiling module block_drawer_data
+# -- Compiling module board
+# -- Compiling module board_tb
+# -- Compiling module board_ctrl
+# -- Compiling module board_data
+# -- Compiling module board_drawer
+# -- Compiling module board_drawer_tb
+# -- Compiling module board_drawer_ctrl
+# -- Compiling module board_drawer_data
+# -- Compiling module board_drawer_system
+# -- Compiling module board_drawer_system_tb
+# -- Compiling module clear_row
+# -- Compiling module clear_row_ctr
+# -- Compiling module clear_row_data
+# -- Compiling module clear_row_tb
+# -- Compiling module clear_rows
+# -- Compiling module clear_rows_tb
+# -- Compiling module collision
+# -- Compiling module collision_ctr
+# -- Compiling module collision_data
+# -- Compiling module collision_tb
+# -- Compiling module color_24_6_decoder
+# -- Compiling module color_24_6_encoder
+# -- Compiling module game_check
+# -- Compiling module game_check_ctrl
+# -- Compiling module game_check_data
+# -- Compiling module game_loop
+# -- Compiling module game_loop_tb
+# -- Compiling module game_loop_ctrl
+# -- Compiling module game_loop_data
+# -- Compiling module input_airlock
+# -- Compiling module input_airlock_tb
+# -- Compiling module rng
+# -- Compiling module rng_tb
+# -- Compiling module row_filled
+# -- Compiling module row_filled_ctr
+# -- Compiling module row_filled_data
+# -- Compiling module row_filled_tb
+# -- Compiling module screen_state
+# -- Compiling module screen_state_tb
+# -- Compiling module shift_controller
+# -- Compiling module shift_controller_tb
+# -- Compiling module shift_controller_ctrl
+# -- Compiling module shift_controller_data
+# -- Compiling module shift_down
+# -- Compiling module shift_down_tb
+# -- Compiling module shift_down_ctrl
+# -- Compiling module shift_down_data
+# -- Compiling module tetromino
+# -- Compiling module tetromino_tb
+# -- Compiling module tetromino_ctr
+# -- Compiling module tetromino_data
+# -- Compiling module tetromino_drawer
+# -- Compiling module tetromino_drawer_tb
+# -- Compiling module tetromino_drawer_ctrl
+# -- Compiling module tetromino_drawer_data
+# -- Compiling module tetromino_eraser
+# -- Compiling module tetromino_eraser_tb
+# -- Compiling module video_driver
+# 
+# Top level modules:
+# 	DE1_SoC
+# 	block_drawer_tb
+# 	board_tb
+# 	board_drawer_tb
+# 	board_drawer_system_tb
+# 	clear_row_tb
+# 	clear_rows_tb
+# 	collision_tb
+# 	game_loop_tb
+# 	input_airlock_tb
+# 	rng_tb
+# 	row_filled_tb
+# 	screen_state_tb
+# 	shift_controller_tb
+# 	shift_down_tb
+# 	tetromino_tb
+# 	tetromino_drawer_tb
+# 	tetromino_eraser_tb
+# End time: 07:10:14 on Jun 11,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:10:14 on Jun 11,2025
+# vlog -reportprogress 300 ./CLOCK25_PLL.v ./altera_up_avalon_video_vga_timing.v ./board_2PRAM.v ./screen_state_2PRAM.v 
+# -- Compiling module CLOCK25_PLL
+# -- Compiling module altera_up_avalon_video_vga_timing
+# -- Compiling module board_2PRAM
+# -- Compiling module screen_state_2PRAM
+# 
+# Top level modules:
+# 	CLOCK25_PLL
+# 	altera_up_avalon_video_vga_timing
+# 	board_2PRAM
+# 	screen_state_2PRAM
+# End time: 07:10:15 on Jun 11,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 07:10:17 on Jun 11,2025, Elapsed time: 0:10:14
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work board_tb -Lf altera_mf_ver 
+# Start time: 07:10:18 on Jun 11,2025
+# Loading sv_std.std
+# Loading work.board_tb
+# Loading work.board
+# Loading work.board_data
+# Loading work.board_2PRAM
+# Loading altera_mf_ver.altsyncram
+# Loading work.board_ctrl
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: geeoon  Hostname: EE-361PC08  ProcessID: 25772
+#           Attempting to use alternate WLF file "./wlft9z3vz2".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft9z3vz2
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:14:08 on Jun 11,2025
+# vlog -reportprogress 300 ./DE1_SoC.sv ./block_drawer.sv ./block_drawer_ctrl.sv ./block_drawer_data.sv ./board.sv ./board_ctrl.sv ./board_data.sv ./board_drawer.sv ./board_drawer_ctrl.sv ./board_drawer_data.sv ./board_drawer_system.sv ./clear_row.sv ./clear_row_ctr.sv ./clear_row_data.sv ./clear_row_tb.sv ./clear_rows.sv ./collision.sv ./collision_ctr.sv ./collision_data.sv ./collision_tb.sv ./color_24_6_decoder.sv ./color_24_6_encoder.sv ./game_check.sv ./game_check_ctrl.sv ./game_check_data.sv ./game_loop.sv ./game_loop_ctrl.sv ./game_loop_data.sv ./input_airlock.sv ./rng.sv ./row_filled.sv ./row_filled_ctr.sv ./row_filled_data.sv ./row_filled_tb.sv ./screen_state.sv ./shift_controller.sv ./shift_controller_ctrl.sv ./shift_controller_data.sv ./shift_down.sv ./shift_down_ctrl.sv ./shift_down_data.sv ./tetromino.sv ./tetromino_ctr.sv ./tetromino_data.sv ./tetromino_drawer.sv ./tetromino_drawer_ctrl.sv ./tetromino_drawer_data.sv ./tetromino_eraser.sv ./video_driver.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module block_drawer
+# -- Compiling module block_drawer_tb
+# -- Compiling module block_drawer_ctrl
+# -- Compiling module block_drawer_data
+# -- Compiling module board
+# -- Compiling module board_tb
+# -- Compiling module board_ctrl
+# -- Compiling module board_data
+# -- Compiling module board_drawer
+# -- Compiling module board_drawer_tb
+# -- Compiling module board_drawer_ctrl
+# -- Compiling module board_drawer_data
+# -- Compiling module board_drawer_system
+# -- Compiling module board_drawer_system_tb
+# -- Compiling module clear_row
+# -- Compiling module clear_row_ctr
+# -- Compiling module clear_row_data
+# -- Compiling module clear_row_tb
+# -- Compiling module clear_rows
+# -- Compiling module clear_rows_tb
+# -- Compiling module collision
+# -- Compiling module collision_ctr
+# -- Compiling module collision_data
+# -- Compiling module collision_tb
+# -- Compiling module color_24_6_decoder
+# -- Compiling module color_24_6_encoder
+# -- Compiling module game_check
+# -- Compiling module game_check_ctrl
+# -- Compiling module game_check_data
+# -- Compiling module game_loop
+# -- Compiling module game_loop_tb
+# -- Compiling module game_loop_ctrl
+# -- Compiling module game_loop_data
+# -- Compiling module input_airlock
+# -- Compiling module input_airlock_tb
+# -- Compiling module rng
+# -- Compiling module rng_tb
+# -- Compiling module row_filled
+# -- Compiling module row_filled_ctr
+# -- Compiling module row_filled_data
+# -- Compiling module row_filled_tb
+# -- Compiling module screen_state
+# -- Compiling module screen_state_tb
+# -- Compiling module shift_controller
+# -- Compiling module shift_controller_tb
+# -- Compiling module shift_controller_ctrl
+# -- Compiling module shift_controller_data
+# -- Compiling module shift_down
+# -- Compiling module shift_down_tb
+# -- Compiling module shift_down_ctrl
+# -- Compiling module shift_down_data
+# -- Compiling module tetromino
+# -- Compiling module tetromino_tb
+# -- Compiling module tetromino_ctr
+# -- Compiling module tetromino_data
+# -- Compiling module tetromino_drawer
+# -- Compiling module tetromino_drawer_tb
+# -- Compiling module tetromino_drawer_ctrl
+# -- Compiling module tetromino_drawer_data
+# -- Compiling module tetromino_eraser
+# -- Compiling module tetromino_eraser_tb
+# -- Compiling module video_driver
+# 
+# Top level modules:
+# 	DE1_SoC
+# 	block_drawer_tb
+# 	board_tb
+# 	board_drawer_tb
+# 	board_drawer_system_tb
+# 	clear_row_tb
+# 	clear_rows_tb
+# 	collision_tb
+# 	game_loop_tb
+# 	input_airlock_tb
+# 	rng_tb
+# 	row_filled_tb
+# 	screen_state_tb
+# 	shift_controller_tb
+# 	shift_down_tb
+# 	tetromino_tb
+# 	tetromino_drawer_tb
+# 	tetromino_eraser_tb
+# End time: 07:14:08 on Jun 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:14:08 on Jun 11,2025
+# vlog -reportprogress 300 ./CLOCK25_PLL.v ./altera_up_avalon_video_vga_timing.v ./board_2PRAM.v ./screen_state_2PRAM.v 
+# -- Compiling module CLOCK25_PLL
+# -- Compiling module altera_up_avalon_video_vga_timing
+# -- Compiling module board_2PRAM
+# -- Compiling module screen_state_2PRAM
+# 
+# Top level modules:
+# 	CLOCK25_PLL
+# 	altera_up_avalon_video_vga_timing
+# 	board_2PRAM
+# 	screen_state_2PRAM
+# End time: 07:14:08 on Jun 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 07:14:10 on Jun 11,2025, Elapsed time: 0:03:52
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work board_tb -Lf altera_mf_ver 
+# Start time: 07:14:10 on Jun 11,2025
+# Loading sv_std.std
+# Loading work.board_tb
+# Loading work.board
+# Loading work.board_data
+# Loading work.board_2PRAM
+# Loading altera_mf_ver.altsyncram
+# Loading work.board_ctrl
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: geeoon  Hostname: EE-361PC08  ProcessID: 25772
+#           Attempting to use alternate WLF file "./wlftr64j8y".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftr64j8y
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./board.sv(131)
+#    Time: 160050 ps  Iteration: 1  Instance: /board_tb
+# Break in Module board_tb at ./board.sv line 131
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:14:50 on Jun 11,2025
+# vlog -reportprogress 300 ./DE1_SoC.sv ./block_drawer.sv ./block_drawer_ctrl.sv ./block_drawer_data.sv ./board.sv ./board_ctrl.sv ./board_data.sv ./board_drawer.sv ./board_drawer_ctrl.sv ./board_drawer_data.sv ./board_drawer_system.sv ./clear_row.sv ./clear_row_ctr.sv ./clear_row_data.sv ./clear_row_tb.sv ./clear_rows.sv ./collision.sv ./collision_ctr.sv ./collision_data.sv ./collision_tb.sv ./color_24_6_decoder.sv ./color_24_6_encoder.sv ./game_check.sv ./game_check_ctrl.sv ./game_check_data.sv ./game_loop.sv ./game_loop_ctrl.sv ./game_loop_data.sv ./input_airlock.sv ./rng.sv ./row_filled.sv ./row_filled_ctr.sv ./row_filled_data.sv ./row_filled_tb.sv ./screen_state.sv ./shift_controller.sv ./shift_controller_ctrl.sv ./shift_controller_data.sv ./shift_down.sv ./shift_down_ctrl.sv ./shift_down_data.sv ./tetromino.sv ./tetromino_ctr.sv ./tetromino_data.sv ./tetromino_drawer.sv ./tetromino_drawer_ctrl.sv ./tetromino_drawer_data.sv ./tetromino_eraser.sv ./video_driver.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module block_drawer
+# -- Compiling module block_drawer_tb
+# -- Compiling module block_drawer_ctrl
+# -- Compiling module block_drawer_data
+# -- Compiling module board
+# -- Compiling module board_tb
+# -- Compiling module board_ctrl
+# -- Compiling module board_data
+# -- Compiling module board_drawer
+# -- Compiling module board_drawer_tb
+# -- Compiling module board_drawer_ctrl
+# -- Compiling module board_drawer_data
+# -- Compiling module board_drawer_system
+# -- Compiling module board_drawer_system_tb
+# -- Compiling module clear_row
+# -- Compiling module clear_row_ctr
+# -- Compiling module clear_row_data
+# -- Compiling module clear_row_tb
+# -- Compiling module clear_rows
+# -- Compiling module clear_rows_tb
+# -- Compiling module collision
+# -- Compiling module collision_ctr
+# -- Compiling module collision_data
+# -- Compiling module collision_tb
+# -- Compiling module color_24_6_decoder
+# -- Compiling module color_24_6_encoder
+# -- Compiling module game_check
+# -- Compiling module game_check_ctrl
+# -- Compiling module game_check_data
+# -- Compiling module game_loop
+# -- Compiling module game_loop_tb
+# -- Compiling module game_loop_ctrl
+# -- Compiling module game_loop_data
+# -- Compiling module input_airlock
+# -- Compiling module input_airlock_tb
+# -- Compiling module rng
+# -- Compiling module rng_tb
+# -- Compiling module row_filled
+# -- Compiling module row_filled_ctr
+# -- Compiling module row_filled_data
+# -- Compiling module row_filled_tb
+# -- Compiling module screen_state
+# -- Compiling module screen_state_tb
+# -- Compiling module shift_controller
+# -- Compiling module shift_controller_tb
+# -- Compiling module shift_controller_ctrl
+# -- Compiling module shift_controller_data
+# -- Compiling module shift_down
+# -- Compiling module shift_down_tb
+# -- Compiling module shift_down_ctrl
+# -- Compiling module shift_down_data
+# -- Compiling module tetromino
+# -- Compiling module tetromino_tb
+# -- Compiling module tetromino_ctr
+# -- Compiling module tetromino_data
+# -- Compiling module tetromino_drawer
+# -- Compiling module tetromino_drawer_tb
+# -- Compiling module tetromino_drawer_ctrl
+# -- Compiling module tetromino_drawer_data
+# -- Compiling module tetromino_eraser
+# -- Compiling module tetromino_eraser_tb
+# -- Compiling module video_driver
+# 
+# Top level modules:
+# 	DE1_SoC
+# 	block_drawer_tb
+# 	board_tb
+# 	board_drawer_tb
+# 	board_drawer_system_tb
+# 	clear_row_tb
+# 	clear_rows_tb
+# 	collision_tb
+# 	game_loop_tb
+# 	input_airlock_tb
+# 	rng_tb
+# 	row_filled_tb
+# 	screen_state_tb
+# 	shift_controller_tb
+# 	shift_down_tb
+# 	tetromino_tb
+# 	tetromino_drawer_tb
+# 	tetromino_eraser_tb
+# End time: 07:14:50 on Jun 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:14:50 on Jun 11,2025
+# vlog -reportprogress 300 ./CLOCK25_PLL.v ./altera_up_avalon_video_vga_timing.v ./board_2PRAM.v ./screen_state_2PRAM.v 
+# -- Compiling module CLOCK25_PLL
+# -- Compiling module altera_up_avalon_video_vga_timing
+# -- Compiling module board_2PRAM
+# -- Compiling module screen_state_2PRAM
+# 
+# Top level modules:
+# 	CLOCK25_PLL
+# 	altera_up_avalon_video_vga_timing
+# 	board_2PRAM
+# 	screen_state_2PRAM
+# End time: 07:14:50 on Jun 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 07:14:52 on Jun 11,2025, Elapsed time: 0:00:42
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work board_tb -Lf altera_mf_ver 
+# Start time: 07:14:53 on Jun 11,2025
+# Loading sv_std.std
+# Loading work.board_tb
+# Loading work.board
+# Loading work.board_data
+# Loading work.board_2PRAM
+# Loading altera_mf_ver.altsyncram
+# Loading work.board_ctrl
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: geeoon  Hostname: EE-361PC08  ProcessID: 25772
+#           Attempting to use alternate WLF file "./wlftj5ckhz".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftj5ckhz
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./board.sv(131)
+#    Time: 200050 ps  Iteration: 1  Instance: /board_tb
+# Break in Module board_tb at ./board.sv line 131
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:17:51 on Jun 11,2025
+# vlog -reportprogress 300 ./DE1_SoC.sv ./block_drawer.sv ./block_drawer_ctrl.sv ./block_drawer_data.sv ./board.sv ./board_ctrl.sv ./board_data.sv ./board_drawer.sv ./board_drawer_ctrl.sv ./board_drawer_data.sv ./board_drawer_system.sv ./clear_row.sv ./clear_row_ctr.sv ./clear_row_data.sv ./clear_row_tb.sv ./clear_rows.sv ./collision.sv ./collision_ctr.sv ./collision_data.sv ./collision_tb.sv ./color_24_6_decoder.sv ./color_24_6_encoder.sv ./game_check.sv ./game_check_ctrl.sv ./game_check_data.sv ./game_loop.sv ./game_loop_ctrl.sv ./game_loop_data.sv ./input_airlock.sv ./rng.sv ./row_filled.sv ./row_filled_ctr.sv ./row_filled_data.sv ./row_filled_tb.sv ./screen_state.sv ./shift_controller.sv ./shift_controller_ctrl.sv ./shift_controller_data.sv ./shift_down.sv ./shift_down_ctrl.sv ./shift_down_data.sv ./tetromino.sv ./tetromino_ctr.sv ./tetromino_data.sv ./tetromino_drawer.sv ./tetromino_drawer_ctrl.sv ./tetromino_drawer_data.sv ./tetromino_eraser.sv ./video_driver.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module block_drawer
+# -- Compiling module block_drawer_tb
+# -- Compiling module block_drawer_ctrl
+# -- Compiling module block_drawer_data
+# -- Compiling module board
+# -- Compiling module board_tb
+# -- Compiling module board_ctrl
+# -- Compiling module board_data
+# -- Compiling module board_drawer
+# -- Compiling module board_drawer_tb
+# -- Compiling module board_drawer_ctrl
+# -- Compiling module board_drawer_data
+# -- Compiling module board_drawer_system
+# -- Compiling module board_drawer_system_tb
+# -- Compiling module clear_row
+# -- Compiling module clear_row_ctr
+# -- Compiling module clear_row_data
+# -- Compiling module clear_row_tb
+# -- Compiling module clear_rows
+# -- Compiling module clear_rows_tb
+# -- Compiling module collision
+# -- Compiling module collision_ctr
+# -- Compiling module collision_data
+# -- Compiling module collision_tb
+# -- Compiling module color_24_6_decoder
+# -- Compiling module color_24_6_encoder
+# -- Compiling module game_check
+# -- Compiling module game_check_ctrl
+# -- Compiling module game_check_data
+# -- Compiling module game_loop
+# -- Compiling module game_loop_tb
+# -- Compiling module game_loop_ctrl
+# -- Compiling module game_loop_data
+# -- Compiling module input_airlock
+# -- Compiling module input_airlock_tb
+# -- Compiling module rng
+# -- Compiling module rng_tb
+# -- Compiling module row_filled
+# -- Compiling module row_filled_ctr
+# -- Compiling module row_filled_data
+# -- Compiling module row_filled_tb
+# -- Compiling module screen_state
+# -- Compiling module screen_state_tb
+# -- Compiling module shift_controller
+# -- Compiling module shift_controller_tb
+# -- Compiling module shift_controller_ctrl
+# -- Compiling module shift_controller_data
+# -- Compiling module shift_down
+# -- Compiling module shift_down_tb
+# -- Compiling module shift_down_ctrl
+# -- Compiling module shift_down_data
+# -- Compiling module tetromino
+# -- Compiling module tetromino_tb
+# -- Compiling module tetromino_ctr
+# -- Compiling module tetromino_data
+# -- Compiling module tetromino_drawer
+# -- Compiling module tetromino_drawer_tb
+# -- Compiling module tetromino_drawer_ctrl
+# -- Compiling module tetromino_drawer_data
+# -- Compiling module tetromino_eraser
+# -- Compiling module tetromino_eraser_tb
+# -- Compiling module video_driver
+# 
+# Top level modules:
+# 	DE1_SoC
+# 	block_drawer_tb
+# 	board_tb
+# 	board_drawer_tb
+# 	board_drawer_system_tb
+# 	clear_row_tb
+# 	clear_rows_tb
+# 	collision_tb
+# 	game_loop_tb
+# 	input_airlock_tb
+# 	rng_tb
+# 	row_filled_tb
+# 	screen_state_tb
+# 	shift_controller_tb
+# 	shift_down_tb
+# 	tetromino_tb
+# 	tetromino_drawer_tb
+# 	tetromino_eraser_tb
+# End time: 07:17:52 on Jun 11,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:17:52 on Jun 11,2025
+# vlog -reportprogress 300 ./CLOCK25_PLL.v ./altera_up_avalon_video_vga_timing.v ./board_2PRAM.v ./screen_state_2PRAM.v 
+# -- Compiling module CLOCK25_PLL
+# -- Compiling module altera_up_avalon_video_vga_timing
+# -- Compiling module board_2PRAM
+# -- Compiling module screen_state_2PRAM
+# 
+# Top level modules:
+# 	CLOCK25_PLL
+# 	altera_up_avalon_video_vga_timing
+# 	board_2PRAM
+# 	screen_state_2PRAM
+# End time: 07:17:52 on Jun 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 07:17:55 on Jun 11,2025, Elapsed time: 0:03:02
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work game_loop_tb -Lf altera_mf_ver 
+# Start time: 07:17:55 on Jun 11,2025
+# Loading sv_std.std
+# Loading work.game_loop_tb
+# Loading work.input_airlock
+# Loading work.game_loop
+# Loading work.rng
+# Loading work.board
+# Loading work.board_data
+# Loading work.board_2PRAM
+# Loading altera_mf_ver.altsyncram
+# Loading work.board_ctrl
+# Loading work.tetromino
+# Loading work.tetromino_data
+# Loading work.tetromino_ctr
+# Loading work.collision
+# Loading work.collision_data
+# Loading work.collision_ctr
+# Loading work.shift_controller
+# Loading work.shift_controller_ctrl
+# Loading work.shift_controller_data
+# Loading work.tetromino_drawer
+# Loading work.tetromino_drawer_ctrl
+# Loading work.tetromino_drawer_data
+# Loading work.board_drawer_system
+# Loading work.board_drawer
+# Loading work.board_drawer_ctrl
+# Loading work.board_drawer_data
+# Loading work.block_drawer
+# Loading work.block_drawer_ctrl
+# Loading work.block_drawer_data
+# Loading work.game_check
+# Loading work.shift_down
+# Loading work.shift_down_ctrl
+# Loading work.shift_down_data
+# Loading work.game_check_ctrl
+# Loading work.game_check_data
+# Loading work.tetromino_eraser
+# Loading work.game_loop_ctrl
+# Loading work.game_loop_data
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: geeoon  Hostname: EE-361PC08  ProcessID: 25772
+#           Attempting to use alternate WLF file "./wlftbevtis".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftbevtis
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./game_loop.sv(313)
+#    Time: 450010050 ps  Iteration: 1  Instance: /game_loop_tb
+# Break in Module game_loop_tb at ./game_loop.sv line 313
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:21:52 on Jun 11,2025
+# vlog -reportprogress 300 ./DE1_SoC.sv ./block_drawer.sv ./block_drawer_ctrl.sv ./block_drawer_data.sv ./board.sv ./board_ctrl.sv ./board_data.sv ./board_drawer.sv ./board_drawer_ctrl.sv ./board_drawer_data.sv ./board_drawer_system.sv ./clear_row.sv ./clear_row_ctr.sv ./clear_row_data.sv ./clear_row_tb.sv ./clear_rows.sv ./collision.sv ./collision_ctr.sv ./collision_data.sv ./collision_tb.sv ./color_24_6_decoder.sv ./color_24_6_encoder.sv ./game_check.sv ./game_check_ctrl.sv ./game_check_data.sv ./game_loop.sv ./game_loop_ctrl.sv ./game_loop_data.sv ./input_airlock.sv ./rng.sv ./row_filled.sv ./row_filled_ctr.sv ./row_filled_data.sv ./row_filled_tb.sv ./screen_state.sv ./shift_controller.sv ./shift_controller_ctrl.sv ./shift_controller_data.sv ./shift_down.sv ./shift_down_ctrl.sv ./shift_down_data.sv ./tetromino.sv ./tetromino_ctr.sv ./tetromino_data.sv ./tetromino_drawer.sv ./tetromino_drawer_ctrl.sv ./tetromino_drawer_data.sv ./tetromino_eraser.sv ./video_driver.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module block_drawer
+# -- Compiling module block_drawer_tb
+# -- Compiling module block_drawer_ctrl
+# -- Compiling module block_drawer_data
+# -- Compiling module board
+# -- Compiling module board_tb
+# -- Compiling module board_ctrl
+# -- Compiling module board_data
+# -- Compiling module board_drawer
+# -- Compiling module board_drawer_tb
+# -- Compiling module board_drawer_ctrl
+# -- Compiling module board_drawer_data
+# -- Compiling module board_drawer_system
+# -- Compiling module board_drawer_system_tb
+# -- Compiling module clear_row
+# -- Compiling module clear_row_ctr
+# -- Compiling module clear_row_data
+# -- Compiling module clear_row_tb
+# -- Compiling module clear_rows
+# -- Compiling module clear_rows_tb
+# -- Compiling module collision
+# -- Compiling module collision_ctr
+# -- Compiling module collision_data
+# -- Compiling module collision_tb
+# -- Compiling module color_24_6_decoder
+# -- Compiling module color_24_6_encoder
+# -- Compiling module game_check
+# -- Compiling module game_check_ctrl
+# -- Compiling module game_check_data
+# -- Compiling module game_loop
+# -- Compiling module game_loop_tb
+# -- Compiling module game_loop_ctrl
+# -- Compiling module game_loop_data
+# -- Compiling module input_airlock
+# -- Compiling module input_airlock_tb
+# -- Compiling module rng
+# -- Compiling module rng_tb
+# -- Compiling module row_filled
+# -- Compiling module row_filled_ctr
+# -- Compiling module row_filled_data
+# -- Compiling module row_filled_tb
+# -- Compiling module screen_state
+# -- Compiling module screen_state_tb
+# -- Compiling module shift_controller
+# -- Compiling module shift_controller_tb
+# -- Compiling module shift_controller_ctrl
+# -- Compiling module shift_controller_data
+# -- Compiling module shift_down
+# -- Compiling module shift_down_tb
+# -- Compiling module shift_down_ctrl
+# -- Compiling module shift_down_data
+# -- Compiling module tetromino
+# -- Compiling module tetromino_tb
+# -- Compiling module tetromino_ctr
+# -- Compiling module tetromino_data
+# -- Compiling module tetromino_drawer
+# -- Compiling module tetromino_drawer_tb
+# -- Compiling module tetromino_drawer_ctrl
+# -- Compiling module tetromino_drawer_data
+# -- Compiling module tetromino_eraser
+# -- Compiling module tetromino_eraser_tb
+# -- Compiling module video_driver
+# 
+# Top level modules:
+# 	DE1_SoC
+# 	block_drawer_tb
+# 	board_tb
+# 	board_drawer_tb
+# 	board_drawer_system_tb
+# 	clear_row_tb
+# 	clear_rows_tb
+# 	collision_tb
+# 	game_loop_tb
+# 	input_airlock_tb
+# 	rng_tb
+# 	row_filled_tb
+# 	screen_state_tb
+# 	shift_controller_tb
+# 	shift_down_tb
+# 	tetromino_tb
+# 	tetromino_drawer_tb
+# 	tetromino_eraser_tb
+# End time: 07:21:52 on Jun 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:21:53 on Jun 11,2025
+# vlog -reportprogress 300 ./CLOCK25_PLL.v ./altera_up_avalon_video_vga_timing.v ./board_2PRAM.v ./screen_state_2PRAM.v 
+# -- Compiling module CLOCK25_PLL
+# -- Compiling module altera_up_avalon_video_vga_timing
+# -- Compiling module board_2PRAM
+# -- Compiling module screen_state_2PRAM
+# 
+# Top level modules:
+# 	CLOCK25_PLL
+# 	altera_up_avalon_video_vga_timing
+# 	board_2PRAM
+# 	screen_state_2PRAM
+# End time: 07:21:53 on Jun 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 07:21:55 on Jun 11,2025, Elapsed time: 0:04:00
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work game_loop_tb -Lf altera_mf_ver 
+# Start time: 07:21:55 on Jun 11,2025
+# Loading sv_std.std
+# Loading work.game_loop_tb
+# Loading work.input_airlock
+# Loading work.game_loop
+# Loading work.rng
+# Loading work.board
+# Loading work.board_data
+# Loading work.board_2PRAM
+# Loading altera_mf_ver.altsyncram
+# Loading work.board_ctrl
+# Loading work.tetromino
+# Loading work.tetromino_data
+# Loading work.tetromino_ctr
+# Loading work.collision
+# Loading work.collision_data
+# Loading work.collision_ctr
+# Loading work.shift_controller
+# Loading work.shift_controller_ctrl
+# Loading work.shift_controller_data
+# Loading work.tetromino_drawer
+# Loading work.tetromino_drawer_ctrl
+# Loading work.tetromino_drawer_data
+# Loading work.board_drawer_system
+# Loading work.board_drawer
+# Loading work.board_drawer_ctrl
+# Loading work.board_drawer_data
+# Loading work.block_drawer
+# Loading work.block_drawer_ctrl
+# Loading work.block_drawer_data
+# Loading work.game_check
+# Loading work.shift_down
+# Loading work.shift_down_ctrl
+# Loading work.shift_down_data
+# Loading work.game_check_ctrl
+# Loading work.game_check_data
+# Loading work.tetromino_eraser
+# Loading work.game_loop_ctrl
+# Loading work.game_loop_data
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: geeoon  Hostname: EE-361PC08  ProcessID: 25772
+#           Attempting to use alternate WLF file "./wlftnvxeq6".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftnvxeq6
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./game_loop.sv(313)
+#    Time: 450010050 ps  Iteration: 1  Instance: /game_loop_tb
+# Break in Module game_loop_tb at ./game_loop.sv line 313
+# End time: 07:27:51 on Jun 11,2025, Elapsed time: 0:05:56
+# Errors: 0, Warnings: 2

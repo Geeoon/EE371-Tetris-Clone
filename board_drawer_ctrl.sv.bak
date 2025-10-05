@@ -1,0 +1,24 @@
+module board_drawer_ctrl();
+    input logic clk, ready, y_eq_20, x_eq_10, done;
+    output logic init, incr_x, incr_y, draw, done;
+    
+    enum logic [2:0] { s_load, s_loop, s_draw, s_wait, s_done} ps, ns;
+    
+    always_ff @(posedge clk) begin
+        if (reset) ps <= s_load;
+        else ps <= ns;
+    end  // always_ff
+    
+    always_comb begin
+        draw = 0;
+        init = 0;
+        case (ps)
+            s_load: begin
+                if (ready) begin
+                    init = 1;
+                end
+                
+            end
+        endcase
+    end  // always_comb
+endmodule  // board_drawer_ctrl

@@ -1,0 +1,3 @@
+module shift_controller_ctrl(clk, reset, start, pos_x_eq_0);
+
+endmodule  // shift_controller_ctrl
